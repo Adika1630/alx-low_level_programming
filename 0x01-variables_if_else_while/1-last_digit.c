@@ -2,29 +2,25 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - Prints the alphabet.
+ * main - Prints the alphabet
  *
- * Return: Always 0 (success)
+ * Return: Always o (success)
  */
 int main(void)
 {
 	int n;
-	int lastn;
+
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastn = n % 10;
-	if (lastn > 5);
-	{
-		printf("Last digit of %d is %d is greater than 5\n", n, lastn);
-	}
-	else if (lastn == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n", n, lastn);
-	}
-	else if (lastn < 6 && lastn != 0)
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastn);
-	}
+
+	m = n % 10;
+	if (m > 5)
+		pritntf("Last digit of %d is %d and is greater than 5\n", n, m);
+	if (m == 0)
+		printf("last digit of %d id %d and is 0\n", n, m);
+	if (m < 6 && m != 0)
+		printf("Last digit is %d is %d and is less thena 6 not 0\n", n, m);
 	return (0);
 }
