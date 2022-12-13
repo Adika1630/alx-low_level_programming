@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * times_table - Print the 9 times table
+ * print_times_table - Print the 9 times table
+ * @n: inter number
  * Return: Always 0 (success)
  */
-void print_times_table(void)
+void print_times_table(int n)
 {
 	int a, b, c;
 
