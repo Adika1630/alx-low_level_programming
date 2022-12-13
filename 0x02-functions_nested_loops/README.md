@@ -4,3 +4,4 @@ Prints the alphabetics 10 times
 Check for lowercaase letters
 Check for both lowercase and uppercase letters
 Prints sign of the number
+Find the absolute value of an integer
