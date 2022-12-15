@@ -10,7 +10,7 @@ void print_line(int n)
 {
 	int l;
 
-	if (n >= 0)
+	if (n > 0)
 	{
 		for (l = 0; l <= n; l++)
 		{
@@ -21,4 +21,5 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
+	_putchar('\n');
 }
