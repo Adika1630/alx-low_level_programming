@@ -1,12 +1,26 @@
 #include "main.h"
+
 /**
- * print_square - Print square of the given input
+ * print_square - print square with length and width
  *
- * @size: sixe of the square both width and length
- * Return: square of made of '#'
+ * @size: size of square
+ * Return: nothing
  */
 void print_square(int size)
 {
-	int x, y;
+	int col, row;
 
-
+	if (size > 0)
+	{
+		for (row = 0; row < size; row++)
+		{
+			for (col = 0; col < size; col++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
+		}
+	}
+	else
+		_putchar('\n');
+}
