@@ -1,28 +1,33 @@
 #include "main.h"
+
 /**
- * print_diagonal - print diagobal lines of a given number
- * @n: number of times character
+ * print_diagonal - Print diagonal line based on given n
+ * @n: input value to check
  *
- * Return: 0 Always (success)
+ * Return: nothing
  */
 void print_diagonal(int n)
 {
-	int x, y;
+	int co, sp;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (x = 0; x <= n; x++)
+		for (co = 1; co <= n; co++)
 		{
-			for (y = 0; y <= n; y++)
+			for (sp = 1; sp <= co; sp++)
 			{
-				_putchar(32);
+				if (sp != co)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('\\');
+				}
 			}
-			_putchar(92);
 			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
