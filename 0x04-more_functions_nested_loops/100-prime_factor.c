@@ -20,6 +20,6 @@ int main(void)
 		}
 		divisor += 1;
 	}
-	printf("%d\n", larg_prim);
+	printf("%ld\n", larg_prim);
 	return (0);
 }
