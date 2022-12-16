@@ -24,4 +24,7 @@ int main(void)
 		j = k;
 		k = l;
 	}
+	printf("%lu\n", m);
+
+	return (0);
 }
