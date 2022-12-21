@@ -13,7 +13,7 @@ char *leet(char *s)
 	char *l = "aAeEoOlLtT";
 	char *n = "4433001177";
 
-	while (s[i] = '\0')
+	while (s[i] != '\0')
 	{
 		while (l[j] != '\0')
 		{
