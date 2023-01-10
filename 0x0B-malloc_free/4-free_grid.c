@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * free_grid - free a 2D grid
@@ -14,5 +16,5 @@ void free_grid(int **grid, int height)
 	{
 		free(grid[i]);
 	}
-	free(gird);
+	free(grid);
 }
